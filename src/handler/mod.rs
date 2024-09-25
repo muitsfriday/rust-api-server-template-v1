@@ -9,6 +9,11 @@ use derive_more::{Display, Error};
 
 pub mod account_create;
 
+pub struct ErrorResponse {
+    pub code: String,
+    pub message: String,
+}
+
 #[derive(Debug, Display, Error)]
 pub enum APIError {
     #[display(fmt = "An internal error occurred. Please try again later.")]

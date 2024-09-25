@@ -12,3 +12,18 @@ Content-Type: application/json
         "display_img": "https://www.muitsfriday.dev/static/ebed7bd5537c02b401aa83c75bb04786/3faea/doge.webp"
     }
 }
+
+###
+
+POST http://{{hostname}}/account
+Content-Type: application/json
+
+{
+    "username": "testuser02",
+    "password": "1234abc",
+    "email": "testuser2@example.com",
+    "info": {
+        "display_name": "testuser2_name",
+        "display_img": "https://www.muitsfriday.dev/static/ebed7bd5537c02b401aa83c75bb04786/3faea/doge.webp"
+    }
+}
